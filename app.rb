@@ -24,10 +24,10 @@ end
 get '/rsvps' do
   @rsvps = CSV.read('rsvps.csv')
 
-  @acceptances = []
-  @rejections  = []
-  @acceptance_count = 0
-  @rejection_count  = 0
+  @acceptances = ['Alex French', 'Jessie White', 'Dylan Holmes', 'Harry Winters', 'Jo Denvers', 'Casey Durnham', 'Jamie Walters']
+  @rejections  = ['Sam Jones', 'Jack Morris', 'Morgan Green']
+  @acceptance_count = '7'
+  @rejection_count  = '3'
 
   # TODO categorise rsvps into acceptances/rejections and count them
 

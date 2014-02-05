@@ -6,19 +6,19 @@
 <body>
   <h1>Invites</h1>
 
-  <h2>Attendees (25)</h2>
+  <h2>Attendees (7)</h2>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-  <h2>Apologies (22)</h2>
+    <% @acceptances.each do |acceptances| %>
+    <li><%= acceptances %></li>
+   <% end %>
+ </ul>
+  
+  <h2>Apologies (3)</h2>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+    <% @rejections.each do |rejections| %>
+    <li><%= rejections %></li>
+  <% end %>
+</ul>
 
 
 </body>
